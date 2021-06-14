@@ -49,3 +49,51 @@ while True:
       if gok == woordkeuze[i]:
         temp = temp[:i] + gok +temp[i+1:]
     print(temp)
+  else: 
+    print("Nee helaas! Deze letter zit niet in het woord.")
+    counter = counter + 1
+    if counter == 1:
+      print("""  ____
+  | \|
+  0  |
+     |
+     |
+     |
+_____|""")
+      print( naam + ", je hebt nog 4 levens.")
+    elif counter == 2:
+      print("""  ____
+  | \|
+  0  |
+  |  |
+     |
+     |
+_____|""")
+      print(naam + ", je hebt nog 3 levens.")
+    elif counter == 3:
+      print("""  ____
+  | \|
+  0  |
+ /|  |
+     |
+     |
+_____|""")
+      print(naam + ", je hebt nog 2 levens.")
+    elif counter == 4:
+      print("""  ____
+  | \|
+  0  |
+ /|\ |
+     |
+     |
+_____|""")
+      print(naam + ", je hebt nog 1 levens.")
+    elif counter == 5:
+      print("""  ____
+  | \|
+  0  |
+ -|- |
+ / \ |
+     |
+_____|""") 
+
