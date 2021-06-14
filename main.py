@@ -34,3 +34,12 @@ time.sleep(2)
 
 print("Het woord heeft " + str(lengtewoord) + " letters")
 
+while True:
+  gok = (input(": "))
+  match = re.search(gok, woordkeuze)
+  if gok == woordkeuze: 
+    print('Goed gedaan! Je heb het woord ' + '"' + keuzeword + '"' + " geraden")
+
+    print("Dit is het einde van het spel. Klik op 'Run' om het spel nogmaals te spelen!")
+    break
+  
