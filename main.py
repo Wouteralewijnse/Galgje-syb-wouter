@@ -42,4 +42,10 @@ while True:
 
     print("Dit is het einde van het spel. Klik op 'Run' om het spel nogmaals te spelen!")
     break
-  
+
+  elif match: 
+    print("Goed geraden! Ga zo door.")
+    for i in range(0, lengtewoord):
+      if gok == woordkeuze[i]:
+        temp = temp[:i] + gok +temp[i+1:]
+    print(temp)
